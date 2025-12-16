@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CONTENEUR PRINCIPAL */
+.hero {
+  position: relative;
+  height: 100vh;
+  padding: 40px 60px;
+  overflow: hidden;
+}
+
+/* VIDÉO EN BACKGROUND */
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* équivalent de background-size: cover */
+  object-position: center;
+  z-index: 0;
+}
+
+/* CONTENU AU-DESSUS */
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+/* LOGO */
+.logo {
+  width: 600px;
+  max-width: 100%;
+  margin-bottom: 12px;
+}
+
+/* TEXTE */
+.description {
+  font-size: 25px;
+  font-weight: 130;
+  line-height: 1.5;
+  margin-bottom: 36px;
+  opacity: 0.95;
+  font-family: 'Helvetica';
+}
+
+/* BOUTON */
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Helvetica';
+
+  background: #fff;
+  color: #000;
+  padding: 14px 22px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-explore span {
+  font-size: 16px;
+}
+
+.btn-explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25);
+}
